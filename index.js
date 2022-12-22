@@ -2,7 +2,7 @@ const   http = require('http'), //creating a HHTP server
         express = require('express'),//express is the module that responds to http requests sent over the web & routing
         fs = require('fs'),//File system functionalities
         xmlParse = require('xslt-processor').xmlParse, //XML Handling
-        xsltProcess = require('xslt_processor').xsltProcess, //XSLT Handling
+        xsltProcess = require('xslt-processor').xsltProcess, //XSLT Handling
         router = express(),
         server = http.createServer(router);
 
