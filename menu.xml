@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="uth-8" ?>
 <menu>
-    <category>
-    </category>
     <category name="Coffe">
         <item>
             <listing>Espresso</listing>
