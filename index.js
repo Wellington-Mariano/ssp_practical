@@ -1,10 +1,13 @@
 const   http = require('http'), //creating a HHTP server
+    path = require('path'),
         express = require('express'),//express is the module that responds to http requests sent over the web & routing
         fs = require('fs'),//File system functionalities
         xmlParse = require('xslt-processor').xmlParse, //XML Handling
         xsltProcess = require('xslt-processor').xsltProcess, //XSLT Handling
         router = express(),
         server = http.createServer(router);
+
+router.use(express.static(path.resolve(__dirname,'views')));//serving the folder the have been created to the web
 
 router.get('/', function(req, res){
 
