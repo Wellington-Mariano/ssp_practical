@@ -9,7 +9,7 @@ const   http = require('http'), //creating a HHTP server
 
 router.use(express.static(path.resolve(__dirname,'views')));//serving the folder the have been created to the web
 
-router.get('/', function(req, res){
+router.get('/get/html', function(req, res){
 
     res.writeHead(200, {'Content-Type' : 'text/html'});//Head of the http request -> http request is when a clist requests something from the server
 
