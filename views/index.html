@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Bare - Start Bootstrap Template</title>
+        <title>Roastmoreland 30-34</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -15,8 +15,8 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <a class="navbar-brand" href="#">Roastmoreland 30-34 Coffes</a>
+               <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
@@ -30,16 +30,40 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-                    </ul>
-                </div>
+                    </ul> 
+                </div>-->
             </div>
         </nav>
         <!-- Page content-->
         <div class="container">
             <div class="text-center mt-5">
-                <h1>A Bootstrap 5 Starter Template</h1>
-                <p class="lead">A complete project boilerplate built with Bootstrap</p>
-                <p>Bootstrap v5.1.3</p>
+                <h1>Welcome to our cafe ☕</h1>
+                <p class="lead">Select your drinks and dishes from the menu below</p>
+            </div>
+            <div class="row">
+                <div id="menu" class="col-lg-4 mb-5 order-1">
+                    <form enctype="application/json" action="/post/json" method="post">
+                        <div class="form-group">
+                            <select class="form-select" name="sec_n">
+                                <option value="0">Coffee</option>
+                                <option value="1">Frappe</option>
+                                <option value="2">Iced Coffee</option>
+                                <option value="3">Tea</option>
+                                <option value="4">Deserts</option>
+                            </select>
+                            <input class="form-control mt-3" type="text" name="items" placeholder="Item">
+                            <input class="form-control mt-3" type="text" name="items" placeholder="Price">
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary btn-block mt-3">Submit</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                    <div class="d-grid gap-2">
+                        <button id="delete" class="btn btn-danger btn-block mt-3">Delete</button>
+                    </div>
+                </div>
+                <div id="results" class="col-lg-8 mb-5 order-22"></div>
             </div>
         </div>
         <!-- Bootstrap core JS-->
